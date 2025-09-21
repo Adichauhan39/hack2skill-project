@@ -1,4 +1,13 @@
-# Python
+# AI Travel Intelligence Hub - Enhanced Git Ignore
+
+# === ENVIRONMENT & SECRETS ===
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# === PYTHON CACHE & BYTECODE ===
 __pycache__/
 *.py[cod]
 *$py.class
