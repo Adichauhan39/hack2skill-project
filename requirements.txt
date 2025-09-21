@@ -1,16 +1,36 @@
-# MINIMAL GOOGLE-ONLY TRAVEL AI DEMO
-# Only essential dependencies for universal travel demo
+# AI Travel Intelligence Hub - Core Dependencies
+# Updated and optimized for the working agent architecture
 
-# Google AI services (PRIMARY REQUIREMENT)
-google-generativeai>=0.3.0
+# === CORE AI SERVICES ===
+google-generativeai>=0.3.0          # Google Gemini AI integration
 
-# Environment configuration
-python-dotenv>=1.0.0
+# === ENVIRONMENT & CONFIGURATION ===
+python-dotenv>=1.0.0                # Environment variable management
 
-# OPTIONAL: Full backend API (comment out if only using universal_travel_demo.py)
-fastapi>=0.104.0
-uvicorn[standard]>=0.24.0
-pydantic>=2.5.0
-sqlalchemy>=2.0.0
-python-jose[cryptography]>=3.3.0
-passlib[bcrypt]>=1.7.4
+# === DATA PROCESSING & ML ===
+numpy>=1.21.0                       # Numerical computing
+pandas>=1.3.0                       # Data manipulation
+
+# === BACKEND API FRAMEWORK ===
+fastapi>=0.104.0                    # Modern Python web framework
+uvicorn[standard]>=0.24.0           # ASGI server
+pydantic>=2.5.0                     # Data validation
+
+# === DATABASE & ORM ===
+sqlalchemy>=2.0.0                   # SQL toolkit and ORM
+psycopg2-binary>=2.9.0              # PostgreSQL adapter
+
+# === AUTHENTICATION & SECURITY ===
+python-jose[cryptography]>=3.3.0    # JWT token handling
+passlib[bcrypt]>=1.7.4              # Password hashing
+
+# === OPTIONAL CLOUD SERVICES ===
+# Uncomment if using Google Cloud features
+# google-cloud-bigquery>=3.4.0      # BigQuery analytics
+# google-cloud-storage>=2.7.0       # Cloud storage
+
+# === DEVELOPMENT & TESTING ===
+# Uncomment for development
+# pytest>=7.0.0                     # Testing framework
+# black>=22.0.0                     # Code formatting
+# flake8>=4.0.0                     # Code linting
